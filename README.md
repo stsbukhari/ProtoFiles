@@ -1,2 +1,2 @@
 # ProtoFiles
-Webots PROTO FIles
+Webots PROTO Files
