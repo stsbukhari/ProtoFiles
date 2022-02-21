@@ -1,0 +1,19 @@
+PROTO book[
+ field SFVec3f translation 0 0 0
+ field SFRotation rotation 0 1 0 0
+ field SFFloat bodyMass 1
+]
+{
+ Book {
+ translation IS translation
+ rotation IS rotation
+ children [
+ # list of children nodes
+ ]
+ boundingObject USE BODY
+ physics Physics {
+ density -1
+ mass IS bodyMass
+ }
+ }
+} 
